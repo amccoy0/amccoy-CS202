@@ -7,6 +7,7 @@
   <style>
     body {
       margin: 2rem;
+      margin: 0px;
     }
     header {
       padding: 2rem;
@@ -21,10 +22,7 @@
       background-color: #1234ab;
     }
     div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-   
+      padding: 1rem;
     }
     p {
       padding: 1rem;
@@ -35,13 +33,18 @@
       padding: 2rem;
       background-color: #ccc;
     }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   </style>
 </head>
 <body>
   <header>
     <!-- add logo here -->
     <nav>
-      <menu>
+      <menu class="flex-container">
         <li>home</li>
         <li>page 2</li>
         <li>page 3</li>
@@ -51,7 +54,11 @@
   <main>
     <!-- Every page must have a header 1 -->
     <h1>This will be header1</h1>
-    <div>
+    <img src="../assets/images/soccer-ball.jpeg" n alt="soccer ball">
+    <div class="flex-container">
+      <p>I put some text</p>
+      <p>I put some text</p>
+      <p>I put some text</p>
       <p>I put some text</p>
       <p>I put some text</p>
       <p>I put some text</p>
