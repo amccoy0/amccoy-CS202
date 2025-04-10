@@ -1,0 +1,65 @@
+/*
+Home Page CSS
+*/
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1240px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+nav {
+  background: #333333;
+  padding: 10px;
+}
+
+nav button {
+  background-color: #444444;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown {
+  display: none;
+  background: #555555;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown a {
+  color: #ffffff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background: #666666;
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .dropdown a {
+    display: inline-block;
+    /* padding: 5px 80px; */
+  }
+}
