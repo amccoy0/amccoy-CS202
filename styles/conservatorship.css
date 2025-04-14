@@ -1,17 +1,25 @@
 /*
 Conservatorship Page CSS
 */
+/*
+Home Page CSS
+*/
 body {
   margin: 0;
   padding: 0;
   max-width: 1240px;
   margin: 0 auto;
   align-content: center;
+  background-color: blue;
 }
-
+header {
+  background-color: pink;
+  padding: 1rem;
+}
 nav {
   background: #333333;
   padding: 10px;
+  margin-left: 0rem;
 }
 
 nav button {
@@ -42,6 +50,32 @@ nav button {
 
 .dropdown a:hover {
   background: #666666;
+}
+
+.selected {
+  /* this is for current page that is selected in menu to change color*/
+  color: #add8e6;
+}
+
+main {
+  background-color: yellow;
+  padding: 1rem;
+
+}
+
+footer {
+  margin: 0rem;
+  padding: 1rem;
+  background-color: #FFF;
+}
+
+ul {
+  list-style: none;
+  /* removes side padding */
+  padding: 0rem;
+}
+li {
+  margin: 1rem;
 }
 @media (min-width: 1024px) {
   body {
