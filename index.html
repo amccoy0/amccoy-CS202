@@ -3,40 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>August McCoy's Home Page</title>
-  <style>
-    body {
-      margin: 2rem;
-      margin: 0px;
-      background-color: #FFF5EE;
-    }
-    header {
-
-    }
-    main {
-
-    }
-    h1 {
-
-    }
-
-  </style>
-
+  <title>Website Home Page</title>
+  <link rel="stylesheet" href="styles/base.css">
 <body>
   <header>
-    <!-- add menu -->
-    <!-- add image path -->
+    <nav>
+      <!-- Menu -->
+      <button id="img" onclick="toggleMenu()">Menu &#9664;</button>
+      <div class="dropdown" id="menu">
+        <a href="#"><span class="selected">Home</span></a>
+        <a href="pages/conservatorship.html">Conservatorship</a>
+        <a href="pages/testimonials.html">Testimonials</a>
+        <a href="pages/faq.html">FAQ</a>
+        <a href="pages/events.html">Events</a>
+      </div>
+    </nav>
+    <script>
+      function toggleMenu() {
+        let menu = document.getElementById("menu");
+        let button = document.getElementById("img");
+  
+        menu.classList.toggle("show");
+  
+        // Toggle arrow direction
+        if (menu.classList.contains("show")) {
+          button.innerHTML = "Menu &#9662;"; // Left arrow
+        } else {
+          button.innerHTML = "Menu &#9664;"; // Down arrow
+        }
+      }
+    </script>
+    <!-- replace image with png logo when I get it -->
+    <img src="assets/images/soccer-ball.jpeg" n alt="soccer ball">
   </header>
   <main>
     <h1>Welcome</h1>
-    <!-- Do i need to format this differently? -->
     <p>If you have a child or other family member with Autism, Down's Syndrome, Rett Syndrome, Cerebral Palsy or any other disability, you will more than likely need to set up a Special Needs Trust for him or her.
       My practice focuses primarily on Special Needs Trusts and estate planning for families who have children with disabilities. As a result, my office has streamlined the process, making it easy and affordable for you accomplish this extremely important task.
       After reading through my web site, if you or the person with a disability is a resident of California, please feel free to contact me.
       On the other hand, if you would like to learn more about Special Needs Trusts before proceeding, consider attending one of my seminars or speaking engagements regarding Special Needs Trusts listed on the Events/Links page.</p>
   </main>
   <footer>
-    <!-- add in legal info/contact info -->
+    <ul>
+      <li>Elizabeth C. McCoy, Esq., A Professional Corporation</li>
+      <li>5256 S. Mission Road, Suite 124</li>
+      <li>Bonsall, CA 92003-3620</li>
+      <li>Ph: (760) 723-8906</li>
+      <li>elizabeth@ca-specialneedstrusts.com</li>
+    </ul>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
