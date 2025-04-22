@@ -62,6 +62,12 @@ li {
 
 .person {
   /* These are just color changing classes */
+  color:#ff0000;
+  font-style: italic;
+}
+
+.testimonials{
+  /* this handles spacing foor the div testimonials */
 }
 
 .dropdown {
