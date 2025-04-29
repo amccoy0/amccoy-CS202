@@ -10,11 +10,11 @@ body {
   background-color: #eae8e0;
 }
 header {
-  background-color: #f9f9f7;
+  background-color: #FFF;
   padding: 0;
 }
 nav {
-  background: #f9f9f7;
+  background: #FFF;
   margin: 0rem;
   margin-left: 0rem;
   padding: 0;
@@ -56,6 +56,15 @@ li {
   margin: 1rem;
 }
 
+.background {
+  background: no-repeat center/contain url("../assets/images/Elizabeth_McCoy_logo.jpg");
+  width: 100%;
+  max-width: 1024px;
+  height: 500px;
+  color: #fff;
+  margin: 0 auto;
+}
+
 .question {
   /* These are just color changing classes */
   color: #B31B1B;
@@ -82,7 +91,7 @@ li {
 
 .dropdown {
   display: none;
-  background: #f9f9f7;
+  background: #FFF;
 }
 
 .dropdown.show {
