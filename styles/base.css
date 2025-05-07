@@ -10,7 +10,6 @@ body {
 }
 header {
   background-color: #FFF;
-  padding: 1 rem;
 }
 
 nav {
@@ -86,9 +85,9 @@ p {
 
 img {
   margin:auto;
-  align-content: no-repeat center/contain;
+  align-content: center;
   max-width: 800px;
-  width: 50%;
+  width: 60%;
 }
 
 .title {
