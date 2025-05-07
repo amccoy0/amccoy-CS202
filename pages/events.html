@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ Page</title>
   <link rel="stylesheet" href="../styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <!-- add menu -->
     <nav>
-      <button id="img" onclick="toggleMenu()">Menu &#9664;</button>
+      <button id="img" onclick="toggleMenu()">Menu &#9666;</button>
       <div class="dropdown" id="menu">
         <!-- maybe find better names for these pages -->
         <a href="../index.html">Home</a>
@@ -20,7 +23,7 @@
         <a href="../pages/events.html"><span class="selected">Events</span></a>
       </div>
     </nav>
-    <p class="background"></p>
+    <h1 class="background"></h1>
     <script>
       function toggleMenu() {
         let menu = document.getElementById("menu");
@@ -30,18 +33,44 @@
   
         // Toggle arrow direction
         if (menu.classList.contains("show")) {
-          button.innerHTML = "Menu &#9662;"; // Left arrow
+          button.innerHTML = "Menu &#9662;"; // right arrow
         } else {
-          button.innerHTML = "Menu &#9664;"; // Down arrow
+          button.innerHTML = "Menu &#9666;"; // left arrow
         }
       }
     </script>
-    <!-- add image path -->
   </header>
   <main>
-    <h1>Events</h1>
-    <!-- throw in a taca event picture -->
-    <!-- link to podcast -->
+    <h2 class="title">Events</h2>
+    
+    <h3 class="center">TACA Events</h3>
+    <div class="flex-container">
+      <img class="outline" src="../assets/images/E_speaking.jpg" alt="speaking"/>
+    </div>
+    <div class="flex-container">
+      <img class="outline" src="../assets/images/E_taca.jpg" alt="speaking"/>
+    </div>
+    <div class="flex-container">
+      <p>As a longtime advocate for families navigating the world of special needs planning, 
+        I’m honored to serve on the Board of Directors for TACA (The Autism Community in Action). 
+        I also frequently speak at TACA events, where I have the privilege of connecting directly 
+        with parents and caregivers, offering guidance on legal and financial tools that can 
+        safeguard their children’s futures. It’s incredibly meaningful work, and I’m proud to 
+        contribute to a community so deeply committed to empowering families.</p>
+      <a class="center" href="https://www.tacanow.org/" target="_blank">Learn More About TACA</a>
+    </div>
+    <div class="flex-container">
+      <h4 class="center">Podcast</h4>
+      <p>Check out my podcast on Special Needs Trusts and Conservatorship, where I break down these often complex topics 
+        into clear, practical guidance for families. In this episode, I share insights from years of experience helping parents 
+        plan for the long-term well-being of their children with special needs, and discuss key legal tools to 
+        help protect benefits and promote independence.</p>   
+      <a class="center" href="https://youtu.be/j19-W8iWDUY" target="_blank">Listen now!</a>
+    </div>  
+    <div class="flex-container">
+      <h2 class="center">Upcoming Events</h2>
+      <p class="center">Check back soon for upcoming events!</p>
+    </div>
   </main>
   <footer>
     <ul>

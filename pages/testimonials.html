@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonials Page</title>
   <link rel="stylesheet" href="../styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <!-- add menu -->
     <nav>
-      <button id="img" onclick="toggleMenu()">Menu &#9664;</button>
+      <button id="img" onclick="toggleMenu()">Menu &#9666;</button>
       <div class="dropdown" id="menu">
         <!-- maybe find better names for these pages -->
         <a href="../index.html">Home</a>
@@ -18,9 +21,9 @@
         <a href="#"><span class="selected">Testimonials</span></a>
         <a href="../pages/faq.html">FAQ</a>
         <a href="../pages/events.html">Events</a>
-      </div>
+        </div>
     </nav>
-    <p class="background"></p>
+    <h1 class="background"></h1>
     <script>
       function toggleMenu() {
         let menu = document.getElementById("menu");
@@ -30,16 +33,16 @@
   
         // Toggle arrow direction
         if (menu.classList.contains("show")) {
-          button.innerHTML = "Menu &#9662;"; // Left arrow
+          button.innerHTML = "Menu &#9662;"; // right arrow
         } else {
-          button.innerHTML = "Menu &#9664;"; // Down arrow
+          button.innerHTML = "Menu &#9666;"; // left arrow
         }
       }
     </script>
     <!-- add image path -->
   </header>
   <main>
-    <h1>Testimonials</h1>
+    <h2 class="title">Testimonials</h2>
     <div>
       <div class="testimonials">
         <p>Elizabeth made the process of completing our Revocable Living Trust and Special Needs Trust quick and easy. 

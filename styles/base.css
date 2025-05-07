@@ -6,27 +6,32 @@ body {
   padding: 0;
   max-width: 1240px;
   margin: 0 auto;
-  background-color: #eae8e0;
+  background-color: #f5f5f5;
 }
 header {
   background-color: #FFF;
   padding: 1 rem;
 }
+
 nav {
   background: #FFF;
   margin: 0rem;
   margin-left: 0rem;
   padding: 0;
+  font-size: 18px;
+  font-family: "Noto serif";
 }
 
 nav button {
-  background-color: #f4f3ef;
-  color: #333333;
+  background-color: #FFF;
+  color: #000;
   padding: 10px;
   border: none;
   cursor: pointer;
   width: 100%;
   text-align: left;
+  font-family: "Noto serif";
+  font-size: 20px;
 }
 
 main {
@@ -37,12 +42,32 @@ main {
 
 div {
   padding: 1rem;
+  text-align: center;
 }
 
 footer {
   margin: 0rem;
   padding: 1rem;
-  background-color: #F2F0EF;
+  background-color: #F2F2F2;
+}
+
+h2 {
+  font-family: "Noto serif";
+  font-size: 30px;
+  font-weight: 300;
+  text-align:center;
+}
+h3 {
+  font-family: "Noto serif";
+  font-size: 30px;
+  font-weight: 300;
+  text-align:center;
+}
+h4 {
+  font-family: "Noto serif";
+  font-size: 30px;
+  font-weight: 300;
+  text-align:center;
 }
 
 ul {
@@ -55,11 +80,22 @@ li {
   margin: 1rem;
 }
 
-img {
-  margin: auto;
-  align-content: center
+p {
+  font-family: "Noto serif";
 }
 
+img {
+  margin:auto;
+  align-content: no-repeat center/contain;
+  max-width: 800px;
+  width: 50%;
+}
+
+.title {
+  /* so title size is bigger than normal section headers */
+  font-size: 38px;
+  text-align:center;
+}
 .background {
   background: no-repeat center/contain url("../assets/images/Elizabeth_McCoy_logo.jpg");
   width: 100%;
@@ -69,10 +105,11 @@ img {
   margin: 0 auto;
 }
 
+
 .question {
   /* These are just color changing classes */
   color: #B31B1B;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
 
 }
@@ -83,15 +120,15 @@ img {
   font-style: italic;
 }
 
-.testimonials{
-  /* this handles spacing foor the div testimonials */
-}
-
 .flex-container {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   justify-content: center;
-  padding: 1rem;
+}
+
+.outline {
+  border: 6px solid #3399CC;
 }
 .dropdown {
   /* this is the color for menu */
@@ -104,7 +141,7 @@ img {
 }
 
 .dropdown a {
-  color: #333333;
+  color: #000;
   padding: 10px;
   display: block;
   text-decoration: none;

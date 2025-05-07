@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ Page</title>
   <link rel="stylesheet" href="../styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <!-- add menu -->
     <nav>
-      <button id="img" onclick="toggleMenu()">Menu &#9664;</button>
+      <button id="img" onclick="toggleMenu()">Menu &#9666;</button>
       <div class="dropdown" id="menu">
         <!-- maybe find better names for these pages -->
         <a href="../index.html">Home</a>
@@ -20,7 +23,7 @@
         <a href="../pages/events.html">Events</a>
       </div>
     </nav>
-    <p class="background"></p>
+    <h1 class="background"></h1>
     <script>
       function toggleMenu() {
         let menu = document.getElementById("menu");
@@ -30,16 +33,16 @@
   
         // Toggle arrow direction
         if (menu.classList.contains("show")) {
-          button.innerHTML = "Menu &#9662;"; // Left arrow
+          button.innerHTML = "Menu &#9662;"; // right arrow
         } else {
-          button.innerHTML = "Menu &#9664;"; // Down arrow
+          button.innerHTML = "Menu &#9666;"; // left arrow
         }
       }
     </script>
     <!-- add image path -->
   </header>
   <main>
-    <h1>Facts and Questions</h1>
+    <h2 class="title">Frequently Asked Questions</h2>
     <div class="flex-container">
       <p class="question">What is a Special Needs Trust?</p>
       <p>A Special Needs Trust is special type of trust that can hold assets for and distribute payments for your child with Autism, while at the same time preventing him or her from being disqualified from receiving Supplemental Security Income ('SSI') or Medi-Cal. Although your child is named as the beneficiary of the trust, the assets are not counted as his or her 'available resources' because the assets are not within his or her 'control'. That is why a person with Autism can have millions of dollars in a Special Needs Trust, and still qualify for means-tested SSI and Medi-Cal.</p>
